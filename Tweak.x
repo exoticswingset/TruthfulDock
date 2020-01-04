@@ -3,7 +3,8 @@
 -(void)setBackgroundAlpha:(double)arg1 { // Method found in SBDockView.h used to set dock opacity
     // Preferences
     
-    NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults]persistentDomainForName:@"com.exoticswingset.truthfuldockprefs"];
+    NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults]
+    persistentDomainForName:@"com.exoticswingset.truthfuldockprefs"];
     id isTweakEnabled = [bundleDefaults valueForKey:@"isTweakEnabled"];
     double alphaValue = [[bundleDefaults valueForKey:@"alphaValue"]doubleValue];
     
